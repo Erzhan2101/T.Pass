@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+//============= grid ============//
+
+.container {
+  max-width: 1130px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+//=========== header ============//
+.header {
+  padding: 30px 0;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .menu {
+    display: flex;
+    align-items: center;
+
+    &__mr-stores {
+      margin-right: 69px;
+    }
+
+    &__mr-help {
+      margin-right: 43px;
+    }
+
+    &__link {
+      font-size: 14px;
+      line-height: 17px;
+      color: #0F2336;
+      font-weight: bold;
+      transition: .4s;
+      &:hover {
+        margin-top: 3px;
+        border-bottom: 3px solid #0F2336;
+      }
+    }
+
+    &__btn {
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 17px;
+      color: #FFFFFF;
+      padding: 16px 26px;
+      background: #0F2336;
+      border: 1px solid #0F2336;
+      box-sizing: border-box;
+      border-radius: 8px;
+      transition: .4s;
+      &:hover{
+        background: #FFFFFF;
+        color: #0F2336;
+        border: 1px solid #0F2336;
+      }
+    }
+  }
+}
