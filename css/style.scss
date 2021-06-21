@@ -34,6 +34,9 @@ a {
 //=========== header ============//
 .header {
   padding: 30px 0;
+  position: absolute;
+  width: 100%;
+  z-index: 3;
 
   &__container {
     display: flex;
@@ -59,6 +62,7 @@ a {
       color: #0F2336;
       font-weight: bold;
       transition: .4s;
+
       &:hover {
         margin-top: 3px;
         border-bottom: 3px solid #0F2336;
@@ -76,7 +80,8 @@ a {
       box-sizing: border-box;
       border-radius: 8px;
       transition: .4s;
-      &:hover{
+
+      &:hover {
         background: #FFFFFF;
         color: #0F2336;
         border: 1px solid #0F2336;
@@ -84,3 +89,89 @@ a {
     }
   }
 }
+
+//======== hero =======//
+
+.hero {
+  background: #F5F6F7;
+  position: relative;
+  padding: 199px 0 185px;
+  z-index: 2;
+
+
+  &__img-people{
+    position: absolute;
+    right: 232px;
+    top: 188px;
+  }
+  &__img-fog{
+    position: absolute;
+    right: 100px;
+    top: 188px;
+    z-index: -2;
+  }
+  &__img-wood1{
+    position: absolute;
+    right: 697px;
+    top: 390px;
+    z-index: -1;
+  }
+  &__img-wood2{
+    position: absolute;
+    right: 191px;
+    top: 161px;
+    z-index: -1;
+  }
+
+  &__content {
+    width: 553px;
+  }
+
+  &__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 136px;
+  }
+
+  &__title {
+    font-weight: bold;
+    font-size: 55px;
+    line-height: 76px;
+    letter-spacing: 1.11px;
+    color: #00CCCC;
+  }
+
+  &__subtitle {
+    font-weight: bold;
+    font-size: 55px;
+    line-height: 76px;
+    letter-spacing: 1.11px;
+    color: #0F2336;
+  }
+
+  &__btn {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    color: #0F2336;
+    background: #00CCCC;
+    border: 1px solid #00CCCC;
+    box-shadow: 0 3px 18px rgba(0, 201, 201, 0.55);
+    border-radius: 14px;
+    transition: .4s;
+    padding: 19px 0;
+    width: 208px;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &:hover {
+      background: rgba(2, 156, 156, 0.8);
+      border: 1px solid #00CCCC;
+    }
+    svg{
+      margin-left: 10px;
+    }
+  }
+}
+
