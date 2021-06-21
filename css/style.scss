@@ -48,12 +48,8 @@ a {
     display: flex;
     align-items: center;
 
-    &__mr-stores {
-      margin-right: 69px;
-    }
-
-    &__mr-help {
-      margin-right: 43px;
+    &__mr{
+      margin:0 43px 0 69px;
     }
 
     &__link {
@@ -61,8 +57,6 @@ a {
       line-height: 17px;
       color: #0F2336;
       font-weight: bold;
-      transition: .4s;
-
       &:hover {
         margin-top: 3px;
         border-bottom: 3px solid #0F2336;
@@ -82,7 +76,7 @@ a {
       transition: .4s;
 
       &:hover {
-        background: #FFFFFF;
+        background: #F5F6F7;
         color: #0F2336;
         border: 1px solid #0F2336;
       }
@@ -99,24 +93,27 @@ a {
   z-index: 2;
 
 
-  &__img-people{
+  &__img-people {
     position: absolute;
     right: 232px;
     top: 188px;
   }
-  &__img-fog{
+
+  &__img-fog {
     position: absolute;
     right: 100px;
     top: 188px;
     z-index: -2;
   }
-  &__img-wood1{
+
+  &__img-wood1 {
     position: absolute;
     right: 697px;
     top: 390px;
     z-index: -1;
   }
-  &__img-wood2{
+
+  &__img-wood2 {
     position: absolute;
     right: 191px;
     top: 161px;
@@ -165,13 +162,120 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
+
     &:hover {
       background: rgba(2, 156, 156, 0.8);
       border: 1px solid #00CCCC;
     }
-    svg{
+
+    svg {
       margin-left: 10px;
     }
+  }
+}
+
+//========= sentence ========//
+
+.sentence {
+  padding: 100px 0 58px;
+
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  &__content {
+    width: 293px;
+  }
+
+  &__order {
+    margin-right: 60px;
+    width: 349px;
+  }
+
+  &__title {
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 32px;
+    letter-spacing: 0.2px;
+    color: #0F2336;
+    margin: 29px 0 12px;
+  }
+
+  &__desc {
+    font-size: 16px;
+    line-height: 24px;
+    color: #576D81;
+  }
+}
+
+//====== work =======//
+
+.work {
+  padding: 100px 0 220px;
+  position: relative;
+  z-index: 3;
+
+  &__tel1 {
+    position: absolute;
+    left: 309px;
+    top: 45px;
+    z-index: 2;
+  }
+
+  &__tel2 {
+    position: absolute;
+    left: 328px;
+    top: 61px;
+    z-index: 1;
+  }
+
+  &__img1 {
+    position: absolute;
+    top: 220px;
+    left: 184px;
+  }
+
+  &__img3 {
+    position: absolute;
+    bottom: 167px;
+    left: 539px;
+    z-index: 2;
+  }
+
+  &__container {
+    background: #F4F5F6;
+    border-radius: 50px;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    Width: 1140px;
+    Height: 540px;
+
+  }
+
+  &__content{
+    width: 414px;
+  }
+
+  &__subtitle {
+    font-size: 18px;
+    line-height: 18px;
+    color: #576D81;
+  }
+
+  &__title {
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 55px;
+    color: #0F2336;
+    margin: 22px 0 21px;
+  }
+
+  &__desc {
+    font-size: 16px;
+    line-height: 24px;
+    color: #576D81;
   }
 }
 
