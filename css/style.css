@@ -236,4 +236,137 @@ a {
   color: #576D81;
 }
 
+.bonus {
+  background: #F4F5F6;
+}
+.bonus__container {
+  height: 527px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.bonus__content {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  row-gap: 30px;
+  background: #FFFFFF;
+  width: 455px;
+  height: 179px;
+}
+.bonus .icon {
+  height: 50px;
+  width: 50px;
+  background: #F6F7F8;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.presents {
+  padding: 180px 0 150px;
+  position: relative;
+  z-index: 5;
+}
+.presents__tel1 {
+  position: absolute;
+  top: 130px;
+  right: 274px;
+  z-index: 3;
+}
+.presents__tel2 {
+  position: absolute;
+  top: 148px;
+  right: 295px;
+  z-index: 2;
+}
+.presents__img3 {
+  position: absolute;
+  right: 150px;
+  top: 294px;
+  z-index: 1;
+}
+.presents__img1 {
+  position: absolute;
+  right: 536px;
+  z-index: 1;
+  bottom: 104px;
+}
+.presents__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  Width: 1140px;
+  Height: 540px;
+  background: #F4F5F6;
+  border-radius: 50px;
+}
+.presents__content {
+  width: 404px;
+  margin-left: 140px;
+}
+.presents__subtitle {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 18px;
+  color: #576D81;
+}
+.presents__title {
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 55px;
+  color: #0F2336;
+  margin: 22px 0 21px;
+}
+.presents__desc {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #576D81;
+}
+
+.connection__content {
+  text-align: center;
+}
+.connection__title {
+  font-weight: 900;
+  font-size: 50px;
+  line-height: 60px;
+  color: #0F2336;
+  margin: 23px 0 20px;
+}
+.connection__input {
+  background: #F0F0F2;
+  border: 1px solid #F0F0F2;
+  box-sizing: border-box;
+  border-radius: 6px;
+  padding: 17px 111px 16px 114px;
+}
+.connection__btn {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  color: #0F2336;
+  background: #00CCCC;
+  border: 1px solid #00CCCC;
+  box-sizing: border-box;
+  border-radius: 14px;
+  padding: 16px 35px 17px 36px;
+  margin-left: 20px;
+}
+.connection__store {
+  margin: 10px 262px 0;
+}
+.connection__apple {
+  background: #240C39;
+  padding: 16px 33px;
+  border-radius: 5px;
+  margin-right: 24px;
+}
+.connection__play {
+  background: #240C39;
+  padding: 16px 33px;
+  border-radius: 5px;
+}
+
 /*# sourceMappingURL=style.css.map */
