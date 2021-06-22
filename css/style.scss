@@ -189,6 +189,17 @@ a {
     width: 293px;
   }
 
+.icon{
+  background: linear-gradient(160.47deg, rgba(0, 201, 201, 0.147) 15.15%, rgba(0, 201, 201, 0.699) 93.19%);
+  width: 105px;
+  height: 105px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.8;
+}
+
   &__order {
     margin-right: 60px;
     width: 349px;
@@ -239,7 +250,7 @@ a {
 
   &__img3 {
     position: absolute;
-    bottom: 167px;
+    bottom: 175px;
     left: 539px;
     z-index: 2;
   }
@@ -250,7 +261,7 @@ a {
     display: grid;
     align-items: center;
     grid-template-columns: 50% 50%;
-    padding: 115px 0 157px 0;
+    padding: 115px 0 97px 0;
   }
 
   &__content {
@@ -266,6 +277,12 @@ a {
   .owl-theme .owl-nav.disabled + .owl-dots {
     margin-top: 50px;
     text-align: left;
+  }
+
+  .owl-theme .owl-dots .owl-dot span {
+    width: 10px;
+    height: 10px;
+    margin: 5px 3px;
   }
 
   &__subtitle {
@@ -293,23 +310,36 @@ a {
 
 .bonus {
   background: #F4F5F6;
+  position: relative;
+  padding: 151px 0 149px;
 
   &__container {
-    height: 527px;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    height: 527px;
+
   }
 
   &__content {
     display: grid;
+    align-items: center;
     grid-template-rows: repeat(3, 1fr);
-    row-gap: 30px;
     background: #FFFFFF;
+    border-radius: 8px;
     width: 455px;
     height: 179px;
+    padding: 36px 31px 43px 98px;
+    box-shadow: 0 8px 32px rgba(15, 35, 54, 0.06);
+  }
+
+  .center {
+    margin: 30px 0 30px ;
   }
 
   .icon {
+    position: absolute;
+    top: 20px;
+    left: 30px;
     height: 50px;
     width: 50px;
     background: #F6F7F8;
@@ -319,6 +349,50 @@ a {
     align-items: center;
   }
 
+  .cen{
+    position: absolute;
+    top: 200px;
+    left: 200px;
+    height: 50px;
+    width: 50px;
+    background: #F6F7F8;
+    border-right: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__title{
+    font-size: 25px;
+    line-height: 25px;
+    letter-spacing: 0.2px;
+    color: #0F2336;
+    font-weight: bold;
+  }
+  &__desc{
+    font-size: 16px;
+    line-height: 24px;
+    color: #576D81;
+    margin-top: 25px;
+  }
+
+  .top {
+    position: absolute;
+    top: -30px;
+    left: 120px;
+  }
+
+  .bottom {
+    position: absolute;
+    bottom: -30;
+    left: 120px;
+  }
+
+  &__img{
+    position: absolute;
+    top: -90px;
+    right: 197px;
+  }
 }
 
 //======= presents ======//
@@ -380,6 +454,12 @@ a {
   .owl-theme .owl-nav.disabled + .owl-dots {
     margin-top: 50px;
     text-align: left;
+  }
+
+  .owl-theme .owl-dots .owl-dot span {
+    width: 10px;
+    height: 10px;
+    margin: 5px 3px;
   }
 
   &__subtitle {
@@ -465,7 +545,7 @@ a {
     transition: .4s;
 
     &:hover {
-      box-shadow: 0 3px 18px rgba(0, 201, 201, 0.55);
+      box-shadow: 0 3px 18px rgb(36, 12, 57);
     }
 
   }
@@ -477,8 +557,7 @@ a {
     transition: .4s;
 
     &:hover {
-      box-shadow: 0 3px 18px rgba(0, 201, 201, 0.55);
-    }
+      box-shadow: 0 3px 18px rgb(36, 12, 57);    }
   }
 }
 
@@ -492,19 +571,19 @@ a {
   &__img1 {
     position: absolute;
     left: 0;
-    bottom: -10px;
+    bottom: 22px;
   }
 
   &__img2 {
     position: absolute;
     right: 0;
-    top: 14px;
+    top: 45px;
   }
 
   &__img3 {
     position: absolute;
     right: 0;
-    top: 131px;
+    top: 161px;
   }
 
   &__container {
@@ -536,8 +615,9 @@ a {
     color: rgba(255, 255, 255, 0.7);
     margin-bottom: 5px;
     transition: .4s;
-    &:hover{
-     color: rgba(155, 255, 255, 0.93);
+
+    &:hover {
+      color: rgba(155, 255, 255, 0.93);
     }
   }
 }
