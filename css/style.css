@@ -510,7 +510,7 @@ a {
   color: #00CCCC;
   margin-bottom: 13px;
 }
-.footer__text {
+.footer__link {
   font-size: 14px;
   line-height: 20px;
   letter-spacing: 0.39px;
@@ -518,7 +518,7 @@ a {
   margin-bottom: 5px;
   transition: 0.4s;
 }
-.footer__text:hover {
+.footer__link:hover {
   color: rgba(155, 255, 255, 0.93);
 }
 
