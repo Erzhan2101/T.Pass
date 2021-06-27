@@ -131,30 +131,18 @@ a {
 
   &__img-people {
     position: absolute;
-    right: 232px;
+    right: 199px;
     top: 188px;
   }
 
-  &__img-fog {
+  &__img-wood{
     position: absolute;
-    right: 100px;
-    top: 188px;
-    z-index: -2;
+    z-index: -1;
+    width: 57%;
+    top: 8px;
+    right: 38px;
   }
 
-  &__img-wood1 {
-    position: absolute;
-    right: 697px;
-    top: 390px;
-    z-index: -1;
-  }
-
-  &__img-wood2 {
-    position: absolute;
-    right: 191px;
-    top: 161px;
-    z-index: -1;
-  }
 
   &__content {
     width: 553px;
@@ -209,7 +197,6 @@ a {
     }
   }
 }
-
 
 
 //========= sentence ========//
@@ -350,95 +337,67 @@ a {
   z-index: 1;
 }
 
-//====== bonus =======//
+//====== discount =======//
 
-.bonus {
+.discount {
+  height: 527px;
   background: #F4F5F6;
   position: relative;
-  padding: 151px 0 149px;
-  z-index: -3;
 
-  &__container {
+
+  &__grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    height: 527px;
-
   }
 
-  &__content {
-    display: grid;
-    align-items: center;
-    grid-template-rows: repeat(3, 1fr);
+  &__boxes {
+    position: absolute;
+    top: -40px;
+  }
+
+  &__box {
+    padding: 25px 40px 43px 25px;
     background: #FFFFFF;
-    border-radius: 8px;
-    width: 455px;
-    height: 179px;
-    padding: 36px 31px 43px 98px;
     box-shadow: 0 8px 32px rgba(15, 35, 54, 0.06);
+    border-radius: 8px;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    margin-bottom: 30px;
+    max-width: 455px;
   }
 
-  .center {
-    margin: 30px 0 30px;
+  &__box:nth-child(2) {
+    margin-left: 40px;
   }
-
-  .icon {
-    position: absolute;
-    top: 20px;
-    left: 30px;
-    height: 50px;
+  &__icon {
     width: 50px;
+    height: 50px;
     background: #F6F7F8;
     border-radius: 8px;
     display: flex;
-    justify-content: center;
     align-items: center;
-  }
-
-  .cen {
-    position: absolute;
-    top: 200px;
-    left: 200px;
-    height: 50px;
-    width: 50px;
-    background: #F6F7F8;
-    border-right: 8px;
-    display: flex;
     justify-content: center;
-    align-items: center;
   }
-
   &__title {
     font-size: 25px;
     line-height: 25px;
     letter-spacing: 0.2px;
     color: #0F2336;
-    font-weight: bold;
+    margin-top: 13px;
   }
-
   &__desc {
     font-size: 16px;
     line-height: 24px;
-    color: #576D81;
     margin-top: 25px;
-  }
-
-  .top {
-    position: absolute;
-    top: -30px;
-    left: 120px;
-  }
-
-  .bottom {
-    position: absolute;
-    bottom: -30;
-    left: 120px;
+    color: #576D81;
   }
 
   &__img {
     position: absolute;
-    top: -90px;
-    right: 197px;
+    bottom: 0;
+    right: 170px;
   }
+
 }
 
 //======= presents ======//
