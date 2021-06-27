@@ -49,6 +49,7 @@ a {
     display: flex;
     align-items: center;
 
+
     &__mr {
       margin: 0 43px 0 69px;
     }
@@ -64,7 +65,7 @@ a {
         content: "";
         position: absolute;
         width: 100%;
-        height: 1px;
+        height: 2px;
         background-color: #0F2336;
         left: 0;
         bottom: -2px;
@@ -75,7 +76,7 @@ a {
       &:hover {
         color: #0F2336;
 
-        &:before  {
+        &:before {
           transform: scale(1);
         }
       }
@@ -95,13 +96,29 @@ a {
       transition: .4s;
 
       &:hover {
-        background: #F5F6F7;
+        background: rgb(0 255 217);
         color: #0F2336;
-        border: 1px solid #0F2336;
+        box-shadow: 0 1px 10px rgb(0, 170, 170);
+        border: 1px solid rgba(6, 90, 170, 0.62);
+
       }
     }
   }
 }
+
+.mobile-menu {
+  display: none;
+  z-index: 1111;
+  color: #0F2336;
+  border: none;
+  background: transparent;
+  font-size: 36px;
+  cursor: pointer;
+  top: 40px;
+  right: 25px;
+  position: fixed;
+}
+
 
 //======== hero =======//
 
@@ -193,6 +210,8 @@ a {
   }
 }
 
+
+
 //========= sentence ========//
 
 .sentence {
@@ -207,16 +226,16 @@ a {
     width: 293px;
   }
 
-.icon{
-  background: linear-gradient(160.47deg, rgba(0, 201, 201, 0.147) 15.15%, rgba(0, 201, 201, 0.699) 93.19%);
-  width: 105px;
-  height: 105px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  opacity: 0.8;
-}
+  .icon {
+    background: linear-gradient(160.47deg, rgba(0, 201, 201, 0.147) 15.15%, rgba(0, 201, 201, 0.699) 93.19%);
+    width: 105px;
+    height: 105px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.8;
+  }
 
   &__order {
     margin-right: 60px;
@@ -284,6 +303,7 @@ a {
 
   &__content {
     max-width: 414px;
+
   }
 
   .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
@@ -324,12 +344,19 @@ a {
   }
 }
 
+.owl-carousel {
+  display: none;
+  width: 80%;
+  z-index: 1;
+}
+
 //====== bonus =======//
 
 .bonus {
   background: #F4F5F6;
   position: relative;
   padding: 151px 0 149px;
+  z-index: -3;
 
   &__container {
     display: grid;
@@ -351,7 +378,7 @@ a {
   }
 
   .center {
-    margin: 30px 0 30px ;
+    margin: 30px 0 30px;
   }
 
   .icon {
@@ -367,7 +394,7 @@ a {
     align-items: center;
   }
 
-  .cen{
+  .cen {
     position: absolute;
     top: 200px;
     left: 200px;
@@ -380,14 +407,15 @@ a {
     align-items: center;
   }
 
-  &__title{
+  &__title {
     font-size: 25px;
     line-height: 25px;
     letter-spacing: 0.2px;
     color: #0F2336;
     font-weight: bold;
   }
-  &__desc{
+
+  &__desc {
     font-size: 16px;
     line-height: 24px;
     color: #576D81;
@@ -406,7 +434,7 @@ a {
     left: 120px;
   }
 
-  &__img{
+  &__img {
     position: absolute;
     top: -90px;
     right: 197px;
@@ -467,6 +495,10 @@ a {
     background: #00CCCC;
     height: 10px;
     width: 55px;
+  }
+
+  .owl-carousel {
+    width: 80%;
   }
 
   .owl-theme .owl-nav.disabled + .owl-dots {
@@ -545,14 +577,14 @@ a {
 
     &:hover {
       background: #FFFFFF;
-      border: 1px solid #00CCCC;
+      border: 1px solid rgb(0, 204, 204);
       box-shadow: 0 3px 18px rgba(0, 201, 201, 0.55);
 
     }
   }
 
   &__store {
-    margin: 20px 260px 0;
+    margin: 20px 262px 0;
   }
 
   &__apple {
@@ -575,7 +607,8 @@ a {
     transition: .4s;
 
     &:hover {
-      box-shadow: 0 3px 18px rgb(36, 12, 57);    }
+      box-shadow: 0 3px 18px rgb(36, 12, 57);
+    }
   }
 }
 
